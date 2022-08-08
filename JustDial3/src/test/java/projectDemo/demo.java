@@ -24,6 +24,9 @@ public void demoProject() throws MalformedURLException, InterruptedException
 	hPage.getNoThanksButton().click();
 	hPage.getTravelBtn().click();
 	hPage.getHotelBtn().click();
+	hPage.getCheckIn().click();
+	hPage.getDate1().click();
+	hPage.getDate2().click();
 	hPage.getBangOpt().click();
 	Thread.sleep(3000);
 	mUtil.swipeAction(driver, 700, 1655, 700, 875, 10000);
@@ -32,8 +35,6 @@ public void demoProject() throws MalformedURLException, InterruptedException
 	hPage.getBookRoomBtn().click();
 	hPage.getBookingcomClick().click();
 	Thread.sleep(5000);
-	hPage.getDateCheck1().click();
-	hPage.getDateSel1().click();
 	
 	hPage.getYesSelect().click();
 	hPage.getSearchBtn().click();

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 07 17:05:18 IST 2022</td>
+<td>Started on:</td><td>Sun Aug 07 18:36:26 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>231 seconds (231058 ms)</td>
+<tr><td>Total time:</td><td>105 seconds (105466 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,50 +75,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='projectDemo.JustDial.demoProject1()'><b>demoProject1</b><br>Test class: projectDemo.JustDial</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.12 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='projectDemo.demo.demoProject()'><b>demoProject</b><br>Test class: projectDemo.demo</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.view.View[@text=&apos;Check-in date&apos;]&apos; is not linked to the same object in DOM anymore (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 404 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;DESKTOP-4B53UME&apos;, ip: &apos;192.168.42.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.justdial.search, statBarHeight=72, noReset=true, viewportRect={top=72, left=0, width=1080, height=1960}, deviceName=9SF3Y18220008060, platform=LINUX, deviceUDID=9SF3Y18220008060, desired={appPackage=com.justdial.search, appActivity=SplashScreenNewActivity, noReset=true, platformVersion=9, platformName=Android, udid=9SF3Y18220008060}, platformVersion=9, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=9SF3Y18220008060, deviceApiLevel=28, deviceManufacturer=HUAWEI, deviceScreenSize=1080x2160, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, appActivity=SplashScreenNewActivity, pixelRatio=3, locationContextEnabled=false, deviceScreenDensity=480, deviceModel=LLD-AL10}]
-Session ID: 608c38cb-4456-4759-a182-6a49a44e21f0
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Resorts&apos;]}
+Session ID: 1b1c91d7-b9d9-4b47-a96a-d06b402ee385
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at projectDemo.JustDial.demoProject1(JustDial.java:33)
+	at projectDemo.demo.demoProject(demo.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1733619456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1733619456'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.12 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace80756779", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace80756779'><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.view.View[@text=&apos;Check-in date&apos;]&apos; is not linked to the same object in DOM anymore (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 404 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;DESKTOP-4B53UME&apos;, ip: &apos;192.168.42.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.justdial.search, statBarHeight=72, noReset=true, viewportRect={top=72, left=0, width=1080, height=1960}, deviceName=9SF3Y18220008060, platform=LINUX, deviceUDID=9SF3Y18220008060, desired={appPackage=com.justdial.search, appActivity=SplashScreenNewActivity, noReset=true, platformVersion=9, platformName=Android, udid=9SF3Y18220008060}, platformVersion=9, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=9SF3Y18220008060, deviceApiLevel=28, deviceManufacturer=HUAWEI, deviceScreenSize=1080x2160, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, appActivity=SplashScreenNewActivity, pixelRatio=3, locationContextEnabled=false, deviceScreenDensity=480, deviceModel=LLD-AL10}]
-Session ID: 608c38cb-4456-4759-a182-6a49a44e21f0
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Resorts&apos;]}
+Session ID: 1b1c91d7-b9d9-4b47-a96a-d06b402ee385
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,23 +119,18 @@ Session ID: 608c38cb-4456-4759-a182-6a49a44e21f0
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at projectDemo.JustDial.demoProject1(JustDial.java:33)
+	at projectDemo.demo.demoProject(demo.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,21 +160,8 @@ Session ID: 608c38cb-4456-4759-a182-6a49a44e21f0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>52</td>
-<td>projectDemo.JustDial@514646ef</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='projectDemo.demo.demoProject()'><b>demoProject</b><br>Test class: projectDemo.demo</td>
-<td></td>
-<td>109</td>
-<td>projectDemo.demo@2b30a42c</td></tr>
+<td>73</td>
+<td>projectDemo.demo@4082ba93</td></tr>
 </table><p>
 </body>
 </html>

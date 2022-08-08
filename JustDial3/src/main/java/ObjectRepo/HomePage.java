@@ -25,9 +25,9 @@ public class HomePage
 
 @FindBy(xpath = "//android.view.View[@resource-id='dates']") private WebElement datesOpt;
 
-@FindBy(xpath = "//android.widget.TextView[@text='13']") private WebElement date1;
+@FindBy(xpath = "//android.widget.TextView[@text='15']") private WebElement date1;
 
-@FindBy(xpath = "//android.widget.TextView[@text='14']") private WebElement date2;
+@FindBy(xpath = "//android.widget.TextView[@text='22']") private WebElement date2;
 
 @FindBy(xpath = "//android.widget.TextView[@text='Jain Farms']") private WebElement selectHotel;
 
@@ -49,11 +49,17 @@ public class HomePage
 
 @FindBy(xpath = "//android.widget.TextView[@text='Yes']")private WebElement yesSelect;
 
+public WebElement getCheckIn() {
+	return checkIn;
+}
+
 @FindBy(xpath = "//android.widget.Button[@text='Search']") private WebElement searchBtn;
 
 @FindBy(xpath = "//android.widget.TextView[@text='Lemon Tree Hotel Electronics City']")private WebElement finalSelect;
 
 @FindBy(xpath = "//android.widget.Button[@text='Reserve']") private WebElement reserveBtn;
+
+@FindBy(xpath = "//android.widget.TextView[@text='Check In'][1]") private WebElement checkIn;
 
 public WebElement getBookingcomClick() {
 	return bookingcomClick;

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="projectDemo.JustDial">
+      <class name="projectDemo.demo">
         <methods>
-          <include name="demoProject1"/>
+          <include name="demoProject"/>
           <include name="setConnection"/>
           <include name="loginToApp"/>
           <include name="logoutApp"/>
           <include name="closeDB"/>
         </methods>
-      </class> <!-- projectDemo.JustDial -->
+      </class> <!-- projectDemo.demo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
