@@ -1,5 +1,11 @@
 package ObjectRepo;
 
+
+import java.util.Date;
+import java.util.List;
+
+import org.apache.xalan.templates.ElemValueOf;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +15,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class HomePage 
 {
+	
 @FindBy(xpath="//android.widget.Button[@text='No, thanks']") private WebElement NoThanksButton;
 
 @FindBy(xpath = "//android.widget.TextView[@text='Travel']") private WebElement TravelBtn;
@@ -158,5 +165,36 @@ public WebElement getSelectHotel() {
 
 public WebElement getBookRoomBtn() {
 	return bookRoomBtn;
+}
+
+public void dateSelect(AndroidDriver driver)
+{
+	Date todayDate= new Date();
+	String tDate=todayDate.toString();
+	System.out.println(tDate);
+	String date[]=tDate.split(" ");
+	String todayD=date[2];
+	int toDate=Integer.parseInt(todayD);
+	System.out.println(toDate);
+	int cID = toDate+7;
+	String checkInDate=String.valueOf(cID);
+	int cOD = toDate+15;
+	String checkOutDate=String.valueOf(cOD);
+	List<WebElement> list = driver.findElements(By.xpath("//android.widget.TextView"));
+	for(WebElement op:list)
+	{
+		String validate=op.getText();
+		if(validate.equals(checkInDate))
+		{
+			op.click();
+			
+		}
+		if(validate.equals(checkOutDate))
+		{
+			op.click();
+			break;
+		}
+		
+	}
 }
 }
